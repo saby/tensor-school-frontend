@@ -11,9 +11,9 @@ JavaScript - ***однопоточный язык программировани
             for (let j = 0; j < 1e9; j++) {
                 i++;
             }
-            alert(`Выполнено за ${(Date.now() - start) / 1000} секунд`);
+            return `Выполнено за ${(Date.now() - start) / 1000} секунд`;
         }
-        increment();
+        console.log(increment());
 
 *       const start = Date.now();
         let xhr = new XMLHttpRequest();
@@ -289,9 +289,9 @@ Web Worker'ы не являются частью JavaScript. Они предст
             for (let j = 0; j < 1e9; j++) {
                 i++;
             }
-            alert(`Выполнено за ${(Date.now() - start) / 1000} секунд`);
+            return `Выполнено за ${(Date.now() - start) / 1000} секунд`;
         }
-        increment();
+        console.log(increment());
 
 С помощью веб воркера можно просто выполнить данный скрипт без блокирования основного потока.
 Перенесем данный код в отдельный файл и поместим вызов функции *increment* внутрь обработчика *message*
