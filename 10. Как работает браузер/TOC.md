@@ -1,6 +1,6 @@
  1. [Почему это важно знать?](./why-this-is-important.md) 
  1. [Из чего состоят наши страницы.](./components-of-a-page.md)
- 1. [Что браузеру нужно знать чтобы нарисовать страницу? Критический путь рендеринга.](./rendering-critical-path.md)
+ 1. [Что браузеру нужно знать чтобы нарисовать страницу?](./rendering-critical-path.md)
  1. [Интернет бывает разный - latency, bandwidth и зачем о них знать](./latency-and-bandwidth.md)
  1. [Оптимизация по объему содержимого](./asset-size-optimization.md)
     1. Минификация кода
