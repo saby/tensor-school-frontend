@@ -35,7 +35,7 @@ async/await - специальный синтаксис для работы с �
         ]);
 
         if (data.getCount()) {
-            dialog.openPopup(config);
+            dialog.open(config);
         }
     } catch(err) {
         errorHandler(err);
