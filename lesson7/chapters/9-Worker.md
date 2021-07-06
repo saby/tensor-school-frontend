@@ -15,8 +15,8 @@ Web Worker'ы не являются частью JavaScript. Они предст
     const worker = new Worker(aURL [, options]);
 ```
 
-* aURL - URL-адрес скрипта который будет выполняться. Он должен подчиняться политике одного источника.
-* options (необязательный) - объект с опциями
+* aURL - URL-адрес скрипта который будет выполняться. Он должен подчиняться [политике одного источника](https://developer.mozilla.org/ru/docs/Web/Security/Same-origin_policy).
+* options (необязательный) - объект с опциями. Подробнее [здесь](https://developer.mozilla.org/ru/docs/Web/API/Worker/Worker).
 
 ## Передача сообщений в/из выделенного worker
 Чтобы передать сообщение в выделенный воркер, нужно вызвать на нем метод *postMessage*
