@@ -6,14 +6,16 @@
 1. Выполнить первую в очереди задачу из очереди задач (Tasks)
     * при отсутствии задач в очереди пропустить шаг
 2. Выполнить первую в очереди задачу из очереди микрозадач (Microtasks)
-    * делать это пока очередь не будет пуста (в процессе выполнения микро задач, очередь может пополняться)
+    * делать это пока очередь не будет пуста (в процессе выполнения микрозадач, очередь может пополняться)
     * при отсутствии задач в очереди пропустить шаг
 3. Выполнить перерендер страницы при необходимости (Render)
 4. Повторить цикл
 
-Очередь микрозадач - очередь задач, которые нужно выполнить сразу после текущего исполняемого сценария. Сюда попадают обработчики разрешившихся [промисов](./6-Promise.md) и колбеки [MutationObserver](https://developer.mozilla.org/ru/docs/Web/API/MutationObserver).
+Очередь микрозадач - очередь задач, которые нужно выполнить сразу после текущего исполняемого скрипта. Сюда попадают обработчики разрешившихся [промисов](./6-Promise.md) и колбеки [MutationObserver](https://developer.mozilla.org/ru/docs/Web/API/MutationObserver), функции переданные в вызов метода [queueMicrotask](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/queueMicrotask).
 
-Очередь задач - очередь задач, которые нужно выполнить после текущего исполняемого сценария, всех микрозадач и браузерного рендеринга.  Сюда попадают обработчики [setTimeout и setInterval](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals), [xhr](https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest), [fetch](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API), [браузерные события](https://developer.mozilla.org/ru/docs/Web/Events).
+Очередь задач - очередь задач, которые нужно выполнить после текущего исполняемого скрипта, всех микрозадач и браузерного рендеринга.  Сюда попадают обработчики [setTimeout и setInterval](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Asynchronous/Timeouts_and_intervals), [xhr](https://developer.mozilla.org/ru/docs/Web/API/XMLHttpRequest), [fetch](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API), [браузерные события](https://developer.mozilla.org/ru/docs/Web/Events).
+
+Список того что попадает в очередь задач и микрозадач **неполный**, но достаточный для понимания материала и решения большинства задач.
 
 ![eventloop](../resources/eventloop2.png)
 
