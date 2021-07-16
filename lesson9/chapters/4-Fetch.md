@@ -7,7 +7,7 @@ fetch - это глобальный метод для работы с запро
    const promise = fetch(url, [options])
 ```
 
-url – URL для отправки запроса.  
+url – адрес ресурса куда отправляется запрос. Может быть строка, экземпляр класса [URL](https://developer.mozilla.org/ru/docs/Web/API/URL) или [Request](https://developer.mozilla.org/ru/docs/Web/API/Request)  
 options – дополнительные параметры: метод, заголовки, тело запроса и т.д.
 Если не указывать аргумент options, то получится простой GET запрос.
 
