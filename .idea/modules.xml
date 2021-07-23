@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../help/.idea/help.iml" filepath="$PROJECT_DIR$/../help/.idea/help.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../sbisru/git/sbisru/.idea/sbisru.iml" filepath="$PROJECT_DIR$/../sbisru/git/sbisru/.idea/sbisru.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/tensor-school-frontend.iml" filepath="$PROJECT_DIR$/.idea/tensor-school-frontend.iml" />
+    </modules>
+  </component>
+</project>
