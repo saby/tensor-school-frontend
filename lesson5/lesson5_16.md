@@ -194,7 +194,7 @@ element.removeEventListener(event, handler[, options]);
 
 ```html
 
-<!-- При клике на div сработают оба события -->
+<!-- При клике на div сработают все три события -->
 <html onclick="alert('html')">
     <body onclick="alert('body')">
         <div onclick="alert('div')"></div>
