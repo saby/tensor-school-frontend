@@ -95,7 +95,7 @@ elem.className = '';
 
 Для управления множеством классов гораздо удобнее использовать свойство *classList*.
 
-###Свойство classList
+### Свойство classList
 
 Свойство classList представляет собой специальный объект [DOMTokenList](https://developer.mozilla.org/ru/docs/Web/API/DOMTokenList), который содержит методы для выполнения различных операций над классами элемента.
 
