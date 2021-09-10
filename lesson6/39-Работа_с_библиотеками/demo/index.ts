@@ -10,7 +10,7 @@ try {
     const {Spoon} = await import('./lib.js');
     spoon = new Spoon();
 } catch (err) {
-    console.error(err)
+    console.error(err);
 }
 
 // Пример динамического подключения через Promise
@@ -19,7 +19,7 @@ import('./lib.js').then(({Plate}) => {
     plate = new Plate();
     console.log(plate.name(), plate.material());
 }).catch((err) => {
-    console.error(err)
+    console.error(err);
 })
 
 console.log(spoon.name(), spoon.material());
