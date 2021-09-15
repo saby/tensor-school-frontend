@@ -58,6 +58,6 @@ console.log('Async Code') добавляется на вершину стека,
 
 И движок JavaScript снова бездействует до появления новой задачи.
 
-![eventloop](../resources/eventloop.gif)
+![eventloop](resources/eventloop.gif)
 
 Можно попробовать дугие примеры работы цикла событий с очередью задач в [онлайн песочнице](http://latentflip.com/loupe/)
