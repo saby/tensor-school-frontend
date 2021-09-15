@@ -56,7 +56,7 @@ reject([reason]) — если произошла ошибка, reason – объ
     });
 ```
 
-![promise](../resources/promise.jpg)
+![promise](resources/promise.jpg)
 
 Чтобы обработать результат выполнения промиса, существуют методы ***then***, ***catch***, ***finally***.
 
