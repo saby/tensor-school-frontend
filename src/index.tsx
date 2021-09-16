@@ -1,3 +1,37 @@
-export function sum(a: number, b: number): number {
-  return a+b;
+/*
+  В функцию forCycle() приходят два целых неотрицательных числа.
+  Используя цикл for, просуммируйте все четные числа в диапазоне между этими значениями (включительно)
+  и верните итоговый результат.
+*/
+export function forCycle(start: number, end: number): number {
+  let result = 0;
+  // Какие-то вычисления
+
+  return result;
+}
+
+
+/*
+  В функцию whileCycle() приходит неотрицательное число.
+  Используя цикл while, выполняйте деление этого числа на два до тех пор, пока результат деления больше 0.1
+  и верните количество потребовавшихся итераций (т.е. сколько раз пришлось выполнить деление).
+*/
+export function whileCycle(a: number): number {
+  let result = 0;
+  // Какие-то вычисления
+
+  return result;
+}
+
+
+/*
+  В функцию doWhileCycle() приходит строка текста.
+  Используя цикл do while, замените в тексте каждый третий символ на символ нижнего подчеркивания
+  и верните итоговый результат.
+*/
+export function doWhileCycle(message: string): number {
+  let result = 0;
+  // Какие-то вычисления
+
+  return result;
 }
