@@ -1,15 +1,70 @@
-import { arraySorting, arrayFiltering, arrayPushing } from './index';
+import { personUpdate, objectFields, objectClone } from './index';
 
-describe('Урок 5.11 - Работа с массивами', () => {
-  test('Тест парсинга и сортировки массива для данных "101,2,0,4,44"', () => {
-    expect(arraySorting("101,2,0,4,44")).toBe("0,2,4,44,101");
+describe('Урок 5.12 - Работа с объектами', () => {
+  describe('Манипуляции со свойствами объекта', () => {
+    test('Изменение объекта: удаление поля age', () => {
+      expect(personUpdate({
+        name: 'Olga',
+        age: 35,
+        gender: 'female',
+        height: 162
+      })).toStrictEqual({
+        name: 'Olga',
+        gender: 'female',
+        height: 162
+      });
+    });
+
+    test('Изменение объекта: добавление поля income', () => {
+      expect(personUpdate({
+        name: 'Oleg',
+        age: 45,
+        gender: 'male',
+        height: 182
+      })).toStrictEqual({
+        name: 'Oleg',
+        age: 45,
+        gender: 'male',
+        height: 182,
+        income: 100000
+      });
+    });
+
+    test('Изменение объекта: ничего не должно измениться', () => {
+      expect(personUpdate({
+        name: 'Oleg',
+        age: 45,
+        gender: 'male',
+        height: 182,
+        income: 80000
+      })).toStrictEqual({
+        name: 'Oleg',
+        age: 45,
+        gender: 'male',
+        height: 182,
+        income: 80000
+      });
+    });
   });
 
-  test('Тест фильтрации массива для данных [101,12,220,340,4,44] - должны быть удалены все числа больше 100', () => {
-    expect(arrayFiltering([101,12,220,340,4,44])).toStrictEqual([12,4,44]);
+  test('Выборка названий свойств объекта', () => {
+    expect(objectFields({
+      name: 'Ivan',
+      age: 45,
+      gender: 'male',
+      height: 182
+    }, {
+      fio: 'Oleg Ivanovich',
+      weight: 82
+    }, {
+      id: 1,
+      isDeleted: true
+    })).toStrictEqual(['age', 'fio', 'gender', 'height', 'id', 'isDeleted', 'name', 'weight']);
   });
 
-  test('Тест на обход массива и добавление данных - объединение массивов [1,2,3,4,5] и [101,102,103,104,105]', () => {
-    expect(arrayPushing([1,2,3,4,5], [101,102,103,104,105])).toStrictEqual([1,101,2,102,3,103,4,104,5,105]);
+  test('Клонирование 5 объектов', () => {
+    expect(objectClone({
+      value: 0
+    }, 5)).toEqual([{value: 0, id: 0}, {value: 0, id: 1}, {value: 0, id: 2}, {value: 0, id: 3}, {value: 0, id: 4}]);
   });
 });
