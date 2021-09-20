@@ -1,6 +1,10 @@
 import { appendToBody, generateTree, replaceNodes } from './index';
 
 describe('Урок 5.15 - Работа с DOM', () => {
+  afterEach(() => {
+    document.body.innerHTML = '';   
+  });
+
   test('Вставка элементов: 5 последовательных тегов P с содержимым и аттрибутами', () => {
     appendToBody('p', 'Привет, мир!', 5);
     expect(document.body).toMatchSnapshot();
