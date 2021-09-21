@@ -1,5 +1,57 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`JSX Неупорядоченный красный список с большими буквами 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-big"
+      data-testid="list"
+      style="color: red;"
+    >
+      <ul>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ul>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу цифры
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу фиолетовый
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу маленькие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
+
 exports[`JSX Переключение размера шрифта Маленький шрифт 1`] = `
 <div>
   <div
@@ -43,58 +95,6 @@ exports[`JSX Переключение размера шрифта Маленьк
         data-testid="fontSize"
       >
         Хочу большие
-      </button>
-    </div>
-    <div
-      class="App__image"
-    />
-  </div>
-</div>
-`;
-
-exports[`JSX Переключение стиля списка Неупорядоченный список 1`] = `
-<div>
-  <div
-    class="App"
-  >
-    <div
-      class="App__list App__list-big"
-      data-testid="list"
-      style="color: red;"
-    >
-      <ul>
-        <li>
-          Посмотреть вокруг
-        </li>
-        <li>
-          Оглянуться назад
-        </li>
-        <li>
-          Рыбов купить
-        </li>
-        <li>
-          "Красивое" сказать
-        </li>
-      </ul>
-    </div>
-    <div
-      class="App__buttons"
-      data-testid="buttons"
-    >
-      <button
-        data-testid="listType"
-      >
-        Хочу цифры
-      </button>
-      <button
-        data-testid="color"
-      >
-        Хочу фиолетовый
-      </button>
-      <button
-        data-testid="fontSize"
-      >
-        Хочу маленькие
       </button>
     </div>
     <div
