@@ -2,13 +2,13 @@ import {render, fireEvent} from "@testing-library/react";
 import App from './App';
 
 describe('JSX', () => {
+    it('Неупорядоченный красный список с большими буквами', () => {
+        const {container} = render(<App/>);
+
+        expect(container).toMatchSnapshot();
+    });
+
     describe('Переключение стиля списка', () => {
-        it('Неупорядоченный список', () => {
-            const {container} = render(<App/>);
-
-            expect(container).toMatchSnapshot();
-        });
-
         it('Упорядоченный список', () => {
             const {queryByTestId, container} = render(<App/>);
 
