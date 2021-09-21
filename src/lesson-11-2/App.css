@@ -11,7 +11,6 @@
     flex-direction: column;
 }
 .App__image {
-    background-image: url(./want.jpg);
     width: 320px;
     height: 180px;
     background-size: cover;

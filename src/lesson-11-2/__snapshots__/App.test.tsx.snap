@@ -1,58 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`toggle color check violet 1`] = `
-<div>
-  <div
-    class="App"
-  >
-    <div
-      class="App__list App__list-big"
-      data-testid="list"
-      style="color: violet;"
-    >
-      <ul>
-        <li>
-          Посмотреть вокруг
-        </li>
-        <li>
-          Оглянуться назад
-        </li>
-        <li>
-          Рыбов купить
-        </li>
-        <li>
-          "Красивое" сказать
-        </li>
-      </ul>
-    </div>
-    <div
-      class="App__buttons"
-      data-testid="buttons"
-    >
-      <button
-        data-testid="listType"
-      >
-        Хочу цифры
-      </button>
-      <button
-        data-testid="color"
-      >
-        Хочу красный
-      </button>
-      <button
-        data-testid="fontSize"
-      >
-        Хочу маленькие
-      </button>
-    </div>
-    <div
-      class="App__image"
-    />
-  </div>
-</div>
-`;
-
-exports[`toggle font size check small font 1`] = `
+exports[`JSX Переключение размера шрифта Маленький шрифт 1`] = `
 <div>
   <div
     class="App"
@@ -104,7 +52,59 @@ exports[`toggle font size check small font 1`] = `
 </div>
 `;
 
-exports[`toggle list check ordered list 1`] = `
+exports[`JSX Переключение стиля списка Неупорядоченный список 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-big"
+      data-testid="list"
+      style="color: red;"
+    >
+      <ul>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ul>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу цифры
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу фиолетовый
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу маленькие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
+
+exports[`JSX Переключение стиля списка Упорядоченный список 1`] = `
 <div>
   <div
     class="App"
@@ -156,7 +156,7 @@ exports[`toggle list check ordered list 1`] = `
 </div>
 `;
 
-exports[`toggle list check unordered list 1`] = `
+exports[`JSX Переключение цвета Фиолетовый 1`] = `
 <div>
   <div
     class="App"
@@ -164,7 +164,7 @@ exports[`toggle list check unordered list 1`] = `
     <div
       class="App__list App__list-big"
       data-testid="list"
-      style="color: red;"
+      style="color: violet;"
     >
       <ul>
         <li>
@@ -193,7 +193,7 @@ exports[`toggle list check unordered list 1`] = `
       <button
         data-testid="color"
       >
-        Хочу фиолетовый
+        Хочу красный
       </button>
       <button
         data-testid="fontSize"
