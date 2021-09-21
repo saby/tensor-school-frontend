@@ -1,0 +1,209 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toggle color check violet 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-big"
+      data-testid="list"
+      style="color: violet;"
+    >
+      <ul>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ul>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу цифры
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу красный
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу маленькие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
+
+exports[`toggle font size check small font 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-small"
+      data-testid="list"
+      style="color: red;"
+    >
+      <ul>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ul>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу цифры
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу фиолетовый
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу большие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
+
+exports[`toggle list check ordered list 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-big"
+      data-testid="list"
+      style="color: red;"
+    >
+      <ol>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ol>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу точки
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу фиолетовый
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу маленькие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
+
+exports[`toggle list check unordered list 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__list App__list-big"
+      data-testid="list"
+      style="color: red;"
+    >
+      <ul>
+        <li>
+          Посмотреть вокруг
+        </li>
+        <li>
+          Оглянуться назад
+        </li>
+        <li>
+          Рыбов купить
+        </li>
+        <li>
+          "Красивое" сказать
+        </li>
+      </ul>
+    </div>
+    <div
+      class="App__buttons"
+      data-testid="buttons"
+    >
+      <button
+        data-testid="listType"
+      >
+        Хочу цифры
+      </button>
+      <button
+        data-testid="color"
+      >
+        Хочу фиолетовый
+      </button>
+      <button
+        data-testid="fontSize"
+      >
+        Хочу маленькие
+      </button>
+    </div>
+    <div
+      class="App__image"
+    />
+  </div>
+</div>
+`;
