@@ -1,13 +1,8 @@
-interface IUser {
-   id: number;
-   name: string;
-}
-
 export async function getUsers(): Promise<string[]> {
    const result: string[] = [];
    const response = await fetch('https://jsonplaceholder.typicode.com/users');
    const users = await response.json();
-   users.forEach((user: IUser) => {
+   users.forEach((user: {name: string}) => {
       result.push(user.name);
    });
    return result;
