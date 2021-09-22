@@ -21,7 +21,7 @@ export function getData(): Promise<[number, number, number]> {
 }
 
 // 9.
-export async function catchExeption(): Promise<string | undefined> {
+export async function catchException(): Promise<string | undefined> {
     try {
         await Promise.reject(new Error('my error'));
     } catch (err: unknown) {

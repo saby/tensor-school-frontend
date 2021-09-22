@@ -1,4 +1,4 @@
-import {mock, getData, catchExeption, FIRST_DELAY, SECOND_DELAY, THIRD_DELAY} from './task';
+import {mock, getData, catchException, FIRST_DELAY, SECOND_DELAY, THIRD_DELAY} from './task';
 
 describe('Асинхронность в JS', () => {
    it('Задача 7. Создание разрешенного промиса', () => {
@@ -16,7 +16,7 @@ describe('Асинхронность в JS', () => {
    });
 
    it('Задача 9. Обработка ошибок в асинхронном коде', () => {
-      return catchExeption().then((res) => {
+      return catchException().then((res) => {
          expect(res).toBe('my error');
       });
    });
