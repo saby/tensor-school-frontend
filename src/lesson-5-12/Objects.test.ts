@@ -65,10 +65,22 @@ describe('Урок 5.12 - Работа с объектами', () => {
     });
     
     describe('Операции клонирования объектов', () => {
-        it('Клонирование 5 объектов', () => {
+        it('Клонирование 5 объектов, поверхностное', () => {
             expect(objectClone({
                 value: 0
             }, 5)).toEqual([{value: 0, id: 0}, {value: 0, id: 1}, {value: 0, id: 2}, {value: 0, id: 3}, {value: 0, id: 4}]);
+        });
+
+        it('Клонирование 3 объектов, глубокое', () => {
+            const obj = {
+                title: 'simple object'
+            };
+            const result = objectClone({
+                value: true,
+                obj
+            }, 3)
+            expect(result).toEqual([{value: true, id: 0, obj}, {value: true, id: 1, obj}, {value: true, id: 2, obj}]);
+            expect(result[0].obj).not.toBe(obj);
         });
     });
 });

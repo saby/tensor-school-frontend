@@ -39,8 +39,20 @@ export function objectFieldsList(obj1: object, obj2: object, obj3: object): stri
 export function objectClone(obj: object, count: number): object[] {
     let result = [];
     for (let i = 0; i < count; i++) {
-        result.push({...obj});
+        result.push(deepClone(obj));
         result[i].id = i;
     }
     return result;
+}
+
+function deepClone(obj: object) {
+  const clObj = {};
+  for(const i in obj) {
+    if (obj[i] && typeof obj[i] === 'object') {
+      clObj[i] = deepClone(obj[i]);
+      continue;
+    }
+    clObj[i] = obj[i];
+  }
+  return clObj;
 }
