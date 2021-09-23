@@ -93,7 +93,7 @@
     }
     ```
 
-9. Исправь функцию catchException так чтобы блок try/catch обрабатывал завершенный с ошибкой промис.
+9. Исправь функцию catchException так чтобы блок try/catch обрабатывал завершенный с ошибкой промис и возвращал текст ошибки.  
     ```typescript
     function catchException() {
         try {
