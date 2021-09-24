@@ -23,6 +23,7 @@ exports[`Render Проверка верстки по умолчанию 1`] = `
       <input
         data-testid="input"
         pattern="\\\\d"
+        type="number"
         value="1000"
       />
     </div>
@@ -53,6 +54,7 @@ exports[`Render Проверка изменения задержки 1`] = `
       <input
         data-testid="input"
         pattern="\\\\d"
+        type="number"
         value="500"
       />
     </div>
@@ -83,6 +85,7 @@ exports[`Render Проверка сброса счетчика 1`] = `
       <input
         data-testid="input"
         pattern="\\\\d"
+        type="number"
         value="1000"
       />
     </div>
@@ -113,6 +116,7 @@ exports[`Render Проверка сброса счетчика 2`] = `
       <input
         data-testid="input"
         pattern="\\\\d"
+        type="number"
         value="1000"
       />
     </div>
@@ -143,6 +147,7 @@ exports[`Render Проверка стандартной задержки в 1 с
       <input
         data-testid="input"
         pattern="\\\\d"
+        type="number"
         value="1000"
       />
     </div>
