@@ -2,7 +2,7 @@ import './App.css';
 import {useState, useEffect, ChangeEvent} from 'react';
 
 // TODO оставить только верстку с testid
-// Убрать зависимости react, state, обработчики
+// Убрать зависимости react и state
 function App() {
     const [counter, setCounter] = useState(0);
     const [delay, setDelay] = useState(1000);
@@ -26,6 +26,7 @@ function App() {
             </div>
             <div className="App__input">
                 <input data-testid="input"
+                       type="number"
                        pattern="\d"
                        onChange={(e: ChangeEvent<HTMLInputElement>) => setDelay(Number(e.target.value))}
                        value={delay}/>
