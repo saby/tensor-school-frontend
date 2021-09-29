@@ -1,0 +1,658 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Context Вкладка Интересы 1`] = `
+<div>
+  <div
+    class="User"
+  >
+    <div
+      class="User__fio"
+    >
+      Иванов Иван Иванович
+    </div>
+    <div
+      class="User__additionalInfo"
+    >
+      мужской
+       
+      13.06.1997
+    </div>
+    <div
+      class="User__tabs"
+    >
+      <div
+        class="User__tab "
+        data-id="contacts"
+      >
+        Контакты
+      </div>
+      <div
+        class="User__tab User__tab-selected"
+        data-id="interests"
+      >
+        Интересы
+      </div>
+      <div
+        class="User__tab "
+        data-id="education"
+      >
+        Образование
+      </div>
+    </div>
+    <div
+      class="User__info"
+    >
+      <div
+        class="User__row"
+      >
+        <label>
+          Обо мне
+        </label>
+        <input
+          data-id="about"
+          type="text"
+          value="человек"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Работа
+        </label>
+        <input
+          data-id="work"
+          type="text"
+          value="Тензор"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Хобби
+        </label>
+        <input
+          data-id="hobby"
+          type="text"
+          value="реверс-инжиниринг"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Музыка
+        </label>
+        <input
+          data-id="music"
+          type="text"
+          value="mood music"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Фильмы
+        </label>
+        <input
+          data-id="films"
+          type="text"
+          value="дюна"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Книги
+        </label>
+        <input
+          data-id="books"
+          type="text"
+          value="дюна"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Игры
+        </label>
+        <input
+          data-id="games"
+          type="text"
+          value="Ведьмак"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Context Вкладка Образование 1`] = `
+<div>
+  <div
+    class="User"
+  >
+    <div
+      class="User__fio"
+    >
+      Иванов Иван Иванович
+    </div>
+    <div
+      class="User__additionalInfo"
+    >
+      мужской
+       
+      13.06.1997
+    </div>
+    <div
+      class="User__tabs"
+    >
+      <div
+        class="User__tab "
+        data-id="contacts"
+      >
+        Контакты
+      </div>
+      <div
+        class="User__tab "
+        data-id="interests"
+      >
+        Интересы
+      </div>
+      <div
+        class="User__tab User__tab-selected"
+        data-id="education"
+      >
+        Образование
+      </div>
+    </div>
+    <div
+      class="User__info"
+    >
+      <h3>
+        Школа
+      </h3>
+      <div
+        class="User__row"
+      >
+        <label>
+          Название
+        </label>
+        <input
+          data-id="name"
+          value="322"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Адрес
+        </label>
+        <input
+          data-id="address"
+          value="Ярославль, ул. Пушкина д. Колотушкина"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Дата начала
+        </label>
+        <input
+          data-id="startDate"
+          type="date"
+          value="2004-09-01"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Дата окончания
+        </label>
+        <input
+          data-id="finishDate"
+          type="date"
+          value="2015-05-01"
+        />
+      </div>
+      <h3>
+        Университет
+      </h3>
+      <div
+        class="User__row"
+      >
+        <label>
+          Название
+        </label>
+        <input
+          data-id="name"
+          value="ЯрГУ им.П.Г.Демидова"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Адрес
+        </label>
+        <input
+          data-id="address"
+          value="Ярославль, ул. Союзная 144"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Дата начала
+        </label>
+        <input
+          data-id="startDate"
+          type="date"
+          value="2015-09-01"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Дата окончания
+        </label>
+        <input
+          data-id="finishDate"
+          type="date"
+          value="2019-08-31"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Специализация
+        </label>
+        <input
+          data-id="specialization"
+          value="Компьютерные науки"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Context Вкладка по умолчанию - Контакты 1`] = `
+<div>
+  <div
+    class="User"
+  >
+    <div
+      class="User__fio"
+    >
+      Иванов Иван Иванович
+    </div>
+    <div
+      class="User__additionalInfo"
+    >
+      мужской
+       
+      13.06.1997
+    </div>
+    <div
+      class="User__tabs"
+    >
+      <div
+        class="User__tab User__tab-selected"
+        data-id="contacts"
+      >
+        Контакты
+      </div>
+      <div
+        class="User__tab "
+        data-id="interests"
+      >
+        Интересы
+      </div>
+      <div
+        class="User__tab "
+        data-id="education"
+      >
+        Образование
+      </div>
+    </div>
+    <div
+      class="User__info"
+    >
+      <div
+        class="User__row"
+      >
+        <label>
+          Телефон
+        </label>
+        <input
+          data-id="phone"
+          type="tel"
+          value="+701234567890"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          email
+        </label>
+        <input
+          data-id="email"
+          type="email"
+          value="myemail@mail.com"
+        />
+      </div>
+      <div
+        class="User__row"
+      >
+        <label>
+          Местонахождение
+        </label>
+        <input
+          data-id="location"
+          value="г. Ярославль"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Context Меняем интересы 1`] = `
+<input
+  data-id="work"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 2`] = `
+<input
+  data-id="hobby"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 3`] = `
+<input
+  data-id="music"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 4`] = `
+<input
+  data-id="films"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 5`] = `
+<input
+  data-id="books"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 6`] = `
+<input
+  data-id="games"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 7`] = `
+<input
+  data-id="about"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 8`] = `
+<input
+  data-id="work"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 9`] = `
+<input
+  data-id="hobby"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 10`] = `
+<input
+  data-id="music"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 11`] = `
+<input
+  data-id="films"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 12`] = `
+<input
+  data-id="books"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 13`] = `
+<input
+  data-id="games"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем интересы 14`] = `
+<input
+  data-id="about"
+  type="text"
+  value=""
+/>
+`;
+
+exports[`Context Меняем контакты 1`] = `
+<input
+  data-id="phone"
+  type="tel"
+  value="+79876543210"
+/>
+`;
+
+exports[`Context Меняем контакты 2`] = `
+<input
+  data-id="email"
+  type="email"
+  value="not_my@email.com"
+/>
+`;
+
+exports[`Context Меняем контакты 3`] = `
+<input
+  data-id="location"
+  value="где-то"
+/>
+`;
+
+exports[`Context Меняем контакты 4`] = `
+<input
+  data-id="phone"
+  type="tel"
+  value="+79876543210"
+/>
+`;
+
+exports[`Context Меняем контакты 5`] = `
+<input
+  data-id="email"
+  type="email"
+  value="not_my@email.com"
+/>
+`;
+
+exports[`Context Меняем контакты 6`] = `
+<input
+  data-id="location"
+  value="где-то"
+/>
+`;
+
+exports[`Context Меняем образование 1`] = `
+NodeList [
+  <input
+    data-id="name"
+    value=""
+  />,
+  <input
+    data-id="name"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 2`] = `
+NodeList [
+  <input
+    data-id="address"
+    value=""
+  />,
+  <input
+    data-id="address"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 3`] = `
+NodeList [
+  <input
+    data-id="startDate"
+    type="date"
+    value=""
+  />,
+  <input
+    data-id="startDate"
+    type="date"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 4`] = `
+NodeList [
+  <input
+    data-id="finishDate"
+    type="date"
+    value=""
+  />,
+  <input
+    data-id="finishDate"
+    type="date"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 5`] = `
+NodeList [
+  <input
+    data-id="specialization"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 6`] = `
+NodeList [
+  <input
+    data-id="name"
+    value=""
+  />,
+  <input
+    data-id="name"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 7`] = `
+NodeList [
+  <input
+    data-id="address"
+    value=""
+  />,
+  <input
+    data-id="address"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 8`] = `
+NodeList [
+  <input
+    data-id="startDate"
+    type="date"
+    value=""
+  />,
+  <input
+    data-id="startDate"
+    type="date"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 9`] = `
+NodeList [
+  <input
+    data-id="finishDate"
+    type="date"
+    value=""
+  />,
+  <input
+    data-id="finishDate"
+    type="date"
+    value=""
+  />,
+]
+`;
+
+exports[`Context Меняем образование 10`] = `
+NodeList [
+  <input
+    data-id="specialization"
+    value=""
+  />,
+]
+`;
