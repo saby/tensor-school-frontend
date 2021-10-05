@@ -232,6 +232,8 @@ const bigInt = 1234567890123456789012345678901234567890n;
 var large = 9_007_199_254_741_001n;
 console.log( large ); // 9007199254741001n
 ```
+
+
 ### Статьи по теме
 
 [Примитив](https://developer.mozilla.org/ru/docs/Glossary/Primitive)
