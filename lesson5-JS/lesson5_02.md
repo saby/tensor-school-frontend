@@ -91,8 +91,8 @@ JavaScript разрабатывался как встраиваемый скри
 ```html
     <body>
         <p>...содержимое перед скриптом...</p>
-        <script defer src="big-script.js"></script>
-        <script defer src="small-script.js"></script>
+        <script async src="big-script.js"></script>
+        <script async src="small-script.js"></script>
         <!--отображается сразу же-->
         <p>...содержимое после скрипта...</p>
     </body>
