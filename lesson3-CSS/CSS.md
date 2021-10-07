@@ -109,7 +109,7 @@ ul > li {
 }
 ```
 
-Звучит запутано, правда? Рассмотрим небольшой пример. Давайте посмотрим, как это выглядит в браузере.
+Звучит запутано, правда? Давайте посмотрим, как это выглядит в браузере.
 
 ```html
 <ul class="main-list">
@@ -344,10 +344,7 @@ main > * {
 
 Дополнительные материалы:
 
-[Селекторы](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors)
-
-[Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
-
-[http://htmlbook.ru/samcss/nasledovanie](http://htmlbook.ru/samcss/nasledovanie)
-
-[http://htmlbook.ru/samcss/kaskadirovanie](http://htmlbook.ru/samcss/kaskadirovanie)
+- [Селекторы](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors)
+- [Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
+- [http://htmlbook.ru/samcss/nasledovanie](http://htmlbook.ru/samcss/nasledovanie)
+- [http://htmlbook.ru/samcss/kaskadirovanie](http://htmlbook.ru/samcss/kaskadirovanie)
