@@ -173,16 +173,10 @@ Flexbox крут, но не позволяет красиво решить пр�
 
 Дополнительные материалы
 
-[Использование медиавыражений](https://developer.mozilla.org/ru/docs/Web/CSS/Media_Queries/Using_media_queries)
-
-[CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ([на русском](https://habr.com/ru/post/467049/))
-
-[CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) ([на русском](https://tuhub.ru/posts/css-grid-complete-guide))
-
-[Копия facebook с табличной вёрсткой](https://habr.com/ru/company/ruvds/blog/564300/) (необязательно)
-
-~~[Верните мой 2007~~ Верстать как в 2008](https://www.youtube.com/watch?v=mE1AvBP08Cs) (необязательно)
-
-[БЭМ за 17 минут](https://www.youtube.com/watch?v=HihYQVuH64U&t=1s)
-
-[Адаптивная вёрстка](https://www.youtube.com/watch?v=XbnAKjjlgc4)
+- [Использование медиавыражений](https://developer.mozilla.org/ru/docs/Web/CSS/Media_Queries/Using_media_queries)
+- [CSS Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) ([на русском](https://habr.com/ru/post/467049/))
+- [CSS Grid Guide](https://css-tricks.com/snippets/css/complete-guide-grid/) ([на русском](https://tuhub.ru/posts/css-grid-complete-guide))
+- [Копия facebook с табличной вёрсткой](https://habr.com/ru/company/ruvds/blog/564300/) (необязательно)
+- ~~[Верните мой 2007~~ Верстать как в 2008](https://www.youtube.com/watch?v=mE1AvBP08Cs) (необязательно)
+- [БЭМ за 17 минут](https://www.youtube.com/watch?v=HihYQVuH64U&t=1s)
+- [Адаптивная вёрстка](https://www.youtube.com/watch?v=XbnAKjjlgc4)
