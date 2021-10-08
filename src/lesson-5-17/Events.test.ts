@@ -79,18 +79,20 @@ describe('Урок 5.17 - События', () => {
          };
 
          document.body.getElementsByTagName('a')[0].addEventListener('click', (e) => {
-            if (testCounter > 0) {
-               // Второй клик
-               testObj.testDefaultPrevented = e.defaultPrevented;
-               testObj.testHref = e.target && e.target.getAttribute('href');
+            testCounter++;
 
-               expect(testObj).toEqual({
-                  testDefaultPrevented: false,
-                  testHref: 'https://tensor.ru/',
-               });
+            if (testCounter < 2) {
+               return;
             }
 
-            testCounter++;
+            // Второй клик
+            testObj.testDefaultPrevented = e.defaultPrevented;
+            testObj.testHref = e.target && e.target.getAttribute('href');
+
+            expect(testObj).toEqual({
+               testDefaultPrevented: false,
+               testHref: 'https://tensor.ru/',
+            });
          })
 
          document.body.getElementsByTagName('a')[0].click();
