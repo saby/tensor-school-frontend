@@ -127,7 +127,7 @@ alert(counter); // 11
 ```javascript
 let x = 10, y = 10;
 
-alert(x++); // 11
+alert(++x); // 11
 alert(y++); // 10
 
 alert(x); // 11
