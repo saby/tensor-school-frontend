@@ -117,7 +117,9 @@
     let sum;
     while(true) {
         let value =+ prompt("Введите число");
-        if (!value) break; // (*)
+        if (!value) {
+            break;  // Прервать цикл
+        }
         sum += value;
     }
 ```
@@ -128,8 +130,10 @@
 ```javascript
     for (let i = 0; i < 10; i++) {
         // если true, пропустить оставшуюся часть тела цикла
-        if (i % 2 == 0) continue;
-        alert(i); // 1, 3, 5, 7, 9
+        if (i % 2 == 0) {
+            continue;   // "Перезапуск"
+        }
+        console.log(i); // 1, 3, 5, 7, 9
     }
 ```
 
