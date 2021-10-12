@@ -37,7 +37,7 @@ function personToString(person: TEmployee | TUser): string {
 ```
 
 ### Задача 3
-У нас есть массив объектов c типом `TFigure`, которые могут описывать прямоугольник `rectangle`  или прямой треугольник `rightTriangle`.
+У нас есть массив объектов c типом `TFigure`, которые могут описывать прямоугольник `rectangle`  или прямоугольный треугольник `rightTriangle`.
 Необходимо написать функцию `calcSquare`, которая будет высчитывать площадь фигуры.
 
 ```TypeScript
