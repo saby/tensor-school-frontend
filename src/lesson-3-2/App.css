@@ -1,0 +1,14 @@
+.grid-container {
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: 1fr 200px 1fr;
+   justify-content: stretch;
+   align-items: stretch;
+   gap: 20px;
+   height: 400px;
+   width: 700px;
+}
+
+.grid-container > div {
+   background-color: #DAA520;
+}

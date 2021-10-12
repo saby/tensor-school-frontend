@@ -1,0 +1,23 @@
+.flex-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   width: 700px;
+   height: 300px;
+}
+
+.flex-container > div {
+   width: 100px;
+   height: 100px;
+   background-color: #DAA520;
+   border-radius: 50%;
+}
+
+.flex-container :first-child,
+.flex-container :last-child {
+   align-self: flex-start;
+}
+
+.flex-container :nth-child(3) {
+   align-self: flex-end;
+}
