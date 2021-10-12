@@ -24,21 +24,15 @@ describe('6.3.2 - Типы данных', () => {
    });
 
    it('Задание 2', () => {
-      const users: TUser[] = getUsers();
+      const persons: TEmployee[] = getPersons();
+      const personsStrings: string[] = persons.map(personToString);
 
-      testArray<TUser>(users);
+      testArray<string>(personsStrings);
 
-      const persons: TEmployee[] = [...users, ...getEmployees()];
-
-      persons.map(personToString).forEach((person, i) => {
-         expect(person).toMatch(/^Имя:\s[^\s\d]+/);
-         expect(person).toMatch(/Возраст:\s[^\s,а-я]+/);
-         expect(person).toMatch(/Пол:\s(мужской|женский)/);
-
-         if (persons[i].company) {
-            expect(person).toMatch(/Компания:\s[\S]+/);
-         }
-      });
+      expect(personsStrings[0]).toMatch(new RegExp('Имя: Петр, Возраст: 40, Пол: мужской'));
+      expect(personsStrings[1]).toMatch(new RegExp('Имя: Катя, Возраст: 23, Пол: женский'));
+      expect(personsStrings[2]).toMatch(new RegExp('Имя: Иван, Возраст: 21, Пол: мужской, Компания: Some company 1'));
+      expect(personsStrings[3]).toMatch(new RegExp('Имя: Юлия, Возраст: 20, Пол: женский, Компания: Some company 2'));
    });
 
    it('Задание 3', () => {
@@ -58,8 +52,18 @@ function testArray<T>(arr: T[]): void {
    expect(arr).not.toHaveLength(0);
 }
 
-function getEmployees(): TEmployee[] {
+function getPersons(): TEmployee[]  {
    return [
+      {
+         name: 'Петр',
+         age: 40,
+         gender: 'male'
+      },
+      {
+         name: 'Катя',
+         age: 23,
+         gender: 'famale'
+      },
       {
          name: 'Иван',
          age: 21,

@@ -30,7 +30,7 @@ export function personToString(person: TEmployee | TUser): string {
    };
    let value = `Имя: ${person.name}, Возраст: ${person.age}, Пол: ${gender[person.gender]}`;
    if ((person as TEmployee).company) {
-      value += `, Компания: ${person.age}`;
+      value += `, Компания: ${(person as TEmployee).company}`;
    }
    return value;
 }
