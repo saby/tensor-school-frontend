@@ -32,7 +32,7 @@ describe('6.3.2 - Типы данных', () => {
 
       persons.map(personToString).forEach((person, i) => {
          expect(person).toMatch(/^Имя:\s[^\s\d]+/);
-         expect(person).toMatch(/Возраст:\s[^\s\,а-я]+/);
+         expect(person).toMatch(/Возраст:\s[^\s,а-я]+/);
          expect(person).toMatch(/Пол:\s(мужской|женский)/);
 
          if (persons[i].company) {
