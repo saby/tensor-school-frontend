@@ -1,5 +1,3 @@
-import App from './App';
-import { render } from '@testing-library/react';
 import { configureToMatchImageSnapshot } from 'jest-image-snapshot';
 import puppeteer, { Page, Browser } from 'puppeteer';
 import path from 'path';
@@ -23,25 +21,19 @@ afterAll(async () => {
 expect.extend({ toMatchImageSnapshot });
 
 describe('Сетка', () => {
-    it('Верстка не тронута', () => {
-        const { container } = render(<App />);
+    let page: Page;
+    beforeEach(async () => {
+        page = await browser.newPage();
+        await page.goto(`file:${path.join(__dirname, 'index.html')}`);
+    });
+
+    it('Верстка не тронута', async () => {
+        const container = await page.evaluate(() => document.body.innerHTML);
+
         expect(container).toMatchSnapshot();
     });
 
-    async function removeBanners(page: Page) {
-        await page.evaluate(() => {
-            document.querySelectorAll('.flex-container').forEach((el) =>
-                el.remove()
-            );
-        });
-    }
-
     it('renders correctly', async () => {
-        const page = await browser.newPage();
-        await page.goto(`file:${path.join(__dirname, 'index.html')}`);
-
-        await removeBanners(page);
-
         const image = await page.screenshot();
 
         expect(image).toMatchImageSnapshot();
