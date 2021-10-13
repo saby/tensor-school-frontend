@@ -77,11 +77,3 @@ export class Person {
         return `Hi! I'm ${this._name} ${this._secondName}. I'm ${this._age}`;
     }
 }
-
-export class Student extends Person {
-    readonly _phone: string | null;
-    constructor(data: IStudentData) {
-        super(data);
-        this._phone = data.phone !== undefined ? data.phone : null;
-    }
-}

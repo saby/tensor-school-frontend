@@ -1,6 +1,6 @@
 # Интерфейсы
 
-1. Найдите и справьте ошибку в данных константы `data` в функции `getPerson`
+1. Найдите и исправьте ошибку в данных константы `data` в функции `getPerson`
 ```TypeScript
 export function getPerson(): Person {
     const data = {
@@ -12,7 +12,7 @@ export function getPerson(): Person {
 } 
 ```
 
-2. Заполните данные в массив в соответствии с интерфейсом 
+2. Допишите функцию getStudentsData так, чтобы она возвращала указанные в комментарии данные в массиве в соответствии с интерфейсом 
 ```TypeScript
 export function getStudentsData(): IStudentData[] {
     /**
