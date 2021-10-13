@@ -1,32 +1,77 @@
 import {Student, Person, IStudentData} from './task';
 
-describe('Наследование', () => {
-   it('Задача 1. Классы Person и Student', () => {
-      const data = getStudentsData();
-      for (let i = 0; i < data.length; i++) {
-         const student = new Student(data[i]);
-         expect(student).toBeInstanceOf(Person);
-         expect(student).toBeInstanceOf(Student);
-
-         expect(typeof student._name).toBe('string');
-         expect(typeof student._secondName).toBe('string');
-         expect(typeof student._age).toBe('number');
-         expect(student._phone).not.toBeUndefined();
-
-         const person = new Person(data[i]) as any;
-         expect(person._phone).toBeUndefined();
-      }
-   })
-   it('Задача 2. Методы getData', () => {
-      const data = getStudentsData()[0];
-      const person = new Person(data);
-      expect(person.getData()).toStrictEqual({
-         name: 'Ivan',
-         secondName: 'Petrov',
-         age: 20
+describe('Урок 6.3.5 - Наследование', () => {
+   describe('Задача 1. Конструкторы для классов Person и Student', () => {
+      it('Конструктор класса Person', () => {
+         const data = getStudentsData();
+         for (let i = 0; i < data.length; i++) {
+            const person = new Person(data[i]) as any;
+            expect(typeof person._name).toBe('string');
+            expect(typeof person._secondName).toBe('string');
+            expect(typeof person._age).toBe('number');
+            expect(person._phone).toBeUndefined();
+         }
       })
-      const student = new Student(data);
-      expect(student.getData()).toStrictEqual(data);
+      it('Конструктор класса Student', () => {
+         const data = getStudentsData();
+         for (let i = 0; i < data.length; i++) {
+            const student = new Student(data[i]) as any;
+            expect(typeof student._name).toBe('string');
+            expect(typeof student._secondName).toBe('string');
+            expect(typeof student._age).toBe('number');
+            expect(student._phone).not.toBeUndefined();
+         }
+      })
+
+      it('Класс Student корректно хранит номер телефона', () => {
+         const data = getStudentsData();
+         expect(typeof new Student(data[0])._phone).toBe('string');
+         expect(typeof new Student(data[1])._phone).toBe('string');
+         expect(new Student(data[2])._phone).toBeNull();
+         expect(data[2].phone).toBeUndefined();
+      })
+   })
+
+   describe('Задача 2. Метод getData в классах Person и Student', () => {
+      it('Формат ответа getData класса Person соответствует IPersonData', () => {
+         const dataArr = getStudentsData();
+         for (let i = 0; i < dataArr.length; i++) {
+            const data = new Person({...dataArr[i]}).getData() as any;
+            expect(typeof data.name).toBe('string');
+            expect(typeof data.secondName).toBe('string');
+            expect(typeof data.age).toBe('number');
+            expect(data.phone).toBeUndefined();
+         }
+      })
+      it('Данные ответа getData класса Person соответствуют полученным в конструктор класса', () => {
+         const dataArr = getStudentsData();
+         for (let i = 0; i < dataArr.length; i++) {
+            const data = {...dataArr[i]};
+            delete data.phone;
+            expect(new Person({...data}).getData()).toStrictEqual(data)
+         }
+      })
+      it('Формат ответа getData класса Student соответствует IStudentData', () => {
+         const dataArr = getStudentsData();
+         for (let i = 0; i < dataArr.length; i++) {
+            const data = new Student({...dataArr[i]}).getData() as any;
+            expect(typeof data.name).toBe('string');
+            expect(typeof data.secondName).toBe('string');
+            expect(typeof data.age).toBe('number');
+            if (dataArr[i].phone !== undefined) {
+               expect(typeof data.phone).toBe('string');
+            } else {
+               expect(data.phone).toBeUndefined();
+            }
+         }
+      })
+      it('Данные ответа getData класса Student соответствуют полученным в конструктор класса', () => {
+         const dataArr = getStudentsData();
+         for (let i = 0; i < dataArr.length; i++) {
+            const data = {...dataArr[i]};
+            expect(new Student({...data}).getData()).toStrictEqual(data)
+         }
+      })
    })
 });
 
