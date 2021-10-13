@@ -68,8 +68,7 @@ describe('Урок 6.3.5 - Наследование', () => {
       it('Данные ответа getData класса Student соответствуют полученным в конструктор класса', () => {
          const dataArr = getStudentsData();
          for (let i = 0; i < dataArr.length; i++) {
-            const data = {...dataArr[i]};
-            expect(new Student({...data}).getData()).toStrictEqual(data)
+            expect(new Student({...dataArr[i]}).getData()).toStrictEqual(dataArr[i])
          }
       })
    })
