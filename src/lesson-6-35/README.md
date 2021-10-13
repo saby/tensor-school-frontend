@@ -1,6 +1,6 @@
 # Наследование
 
-1. Напишите конструкторы для классов `Person` и `Student`
+1. Напишите конструкторы для классов `Person` и `Student`, которые принимают в качестве параметра объекты с интерфейсами `IPersonData` и `IStudentData` соответственно
 ```TypeScript
 export class Person {
     readonly _name: string;
