@@ -35,10 +35,8 @@ class ToDo {
 
 1. приватный метод ***_getList***, который принимает тип `TListOption` и возвращает массив `IToDoItem[]`
 ```TypeScript
-const todo = new ToDo([
-   'Написать ТЗ',
-   { caption: 'Заполнить расписание', done: true }
-]);
+const todo = new ToDo();
+todo.list = ['Написать ТЗ', { caption: 'Заполнить расписание' }]
 ```
 
 2. Геттер ***list***, который возвращает массив строк в формате ***`<caption>, <done ? + : ->`***

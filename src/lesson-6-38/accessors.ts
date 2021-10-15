@@ -1,5 +1,5 @@
 // 1
-export interface IToDoItem {
+interface IToDoItem {
    caption: string;
    done?: boolean;
 }

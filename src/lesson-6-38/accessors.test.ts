@@ -1,4 +1,4 @@
-import { ToDo, TListOption, IToDoItem } from './accessors';
+import { ToDo, TListOption } from './accessors';
 
 describe('6.3.8 - Методы доступа get и set', () => {
 
