@@ -1,9 +1,9 @@
-import { ToDo, TListOption } from './accessors';
+import { ToDo, TListItem } from './accessors';
 
 describe('6.3.8 - Методы доступа get и set', () => {
 
    it('Задание 1', () => {
-      const list: TListOption = getList();
+      const list: TListItem[] = getList();
       const todo = new ToDo(list);
 
       todo.done = 'Item 3';
@@ -25,12 +25,18 @@ describe('6.3.8 - Методы доступа get и set', () => {
       expect(todolist[5]).toBe('Some todo, -');
 
       todo.clear();
+
+      // Передали не валидные данные
+      todo.list = {};
+      todo.list = ['Item 1', {prop: 'value'}];
+
       testArray<string>(todo.list);
-      expect(todo.list).toHaveLength(0);
+      expect(todo.list).toHaveLength(1);
+      expect(todo.list[0]).toBe('Item 1, -');
    });
 });
 
-function getList(): TListOption {
+function getList(): TListItem[] {
    return [
       'Item 1',
       {

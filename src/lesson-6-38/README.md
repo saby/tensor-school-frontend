@@ -13,12 +13,12 @@ interface IToDoItem {
    done?: boolean;
 }
 
-type TListOption = (string | IToDoItem )[];
+type TListItem = string | IToDoItem;
 
 class ToDo {
    protected _list: IToDoItem[] = [];
 
-   constructor(list?: TListOption) {
+   constructor(list?: TListItem[]) {
       this._list = list ? this._getList(list) : [];
    }
 
@@ -26,14 +26,16 @@ class ToDo {
       this._list = [];
    }
 
-   set list(list: TListOption) {
+   set list(list: TListItem[]) {
       this._list = this._getList(list);
    }
 }
 ```
 У класса ***ToDo*** необходимо описать:
 
-1. приватный метод ***_getList***, который принимает тип `TListOption` и возвращает массив `IToDoItem[]`
+1. Приватный метод ***_getList***, который принимает тип `TListItem[]` и возвращает массив `IToDoItem[]`.
+Если в метод передали не массив `TListItem[]`, необходимо вернуть из метода текущий набор.
+Если какой-то из переданных элементов не соответсвует типу `TListItem`, необходимо проигнорировать его и не добавлять в набор.
 ```TypeScript
 const todo = new ToDo();
 todo.list = ['Написать ТЗ', { caption: 'Заполнить расписание' }]

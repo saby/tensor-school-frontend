@@ -4,12 +4,12 @@ interface IToDoItem {
    done?: boolean;
 }
 
-export type TListOption = (string | IToDoItem )[];
+export type TListItem = string | IToDoItem;
 
 export class ToDo {
    protected _list: IToDoItem[] = [];
 
-   constructor(list?: TListOption) {
+   constructor(list?: TListItem[]) {
       this._list = list ? this._getList(list) : [];
    }
 
@@ -17,7 +17,10 @@ export class ToDo {
       this._list = [];
    }
 
-   private _getList(list: TListOption): IToDoItem[] {
+   private _getList(list: TListItem[]): IToDoItem[] {
+      if (!Array.isArray(list)) {
+         return this._list;
+      }
       const added = list.map(item => {
          if (typeof item === 'string') {
             return {
@@ -32,7 +35,7 @@ export class ToDo {
          }
 
          // for tslint fix
-         return {caption: '', done: false};
+         return {caption: ''};
       }).filter(item => item.caption);
 
       return [...this._list, ...added];
@@ -49,7 +52,7 @@ export class ToDo {
       return this._list.map(item => `${item.caption}, ${(item.done ? '+' : '-')}`);
    }
 
-   set list(list: TListOption) {
+   set list(list: TListItem[]) {
       this._list = this._getList(list);
    }
 }
