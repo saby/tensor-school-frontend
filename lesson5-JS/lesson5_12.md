@@ -174,9 +174,11 @@ let obj = new Foo();    // Создан объект obj
 ```
 
 
-## Деструктуризация и Spread
+## Деструктуризация объектов
 
-**Деструктуризация** (или **деструктурирующее присваивание**) – это специальный синтаксис, который позволяет нам «распаковать» объекты в набор переменных, так как иногда они более удобны. Аналогично тому, как мы можем «распаковать» массив в виде совокупности его элементов (см. предыдущий [раздел](https://pro-edu.tensor.ru/tensor/lesson/page.php?id=3166&sectionid=4&pageid=11)), мы можем «распаковать» и объект:
+**Деструктуризация** (или **деструктурирующее присваивание**) – это специальный синтаксис, который позволяет нам «распаковать» объекты в набор переменных, так как иногда они более удобны.
+
+Например:
 
 ```javascript
     let obj  = {
@@ -209,20 +211,45 @@ let obj = new Foo();    // Создан объект obj
     let { width: w, height: h, color: c} = obj;
 ```
 
-**Spread** для объектов также существует и может быть использован, например, для интеграции полей одного объекта в другой объект:
+
+## Spread
+
+В [предыдущем разделе](https://pro-edu.tensor.ru/tensor/lesson/page.php?id=3166&sectionid=4&pageid=11)), мы уже говорили про то, как использовать **spread** для массивов. **Spread** для объектов также существует и может быть использован, например, для интеграции полей одного объекта в другой объект:
 
 ```javascript
-let data = { height: 30 };
+let data = { height: 30, color: '#fefefe', title: 'Name' };
 let obj = { width: 100, ...data};
-console.log(obj);   // { width: 100, height: 30 }
+console.log(obj);   // { width: 100, height: 30, color: '#fefefe', title: 'Name' }
 ```
 
-Использование деструктуризации и spread позволяет также "развернуть" часть полей из объекта, а оставшиеся свойства переупаковать в новый объект:
+Также мы можем использовать spread для объединения двух объектов в третий:
 
 ```javascript
-let { width, ...other} = { width: 100, height: 30, color: '#fefefe' };
+let obj1 = { width: 100, height: 30 };
+let obj2 = { color: '#fefefe', title: 'Name' };
+let obj = { ...obj1, ...obj2 };
+
+console.log(obj);   // { width: 100, height: 30, color: '#fefefe', title: 'Name' }
+```
+
+Совместное использование деструктуризации и spread позволяет красиво и лаконично решать различные задачи, возникающие при работе с объектами.
+В этом случае мы можем "развернуть" часть полей из объекта, а оставшиеся свойства переупаковать в новый объект:
+
+```javascript
+let { width, ...other} = { width: 100, height: 30, color: '#fefefe', title: 'Name' };
 console.log(width);   // 100
-console.log(other);   // { height: 30, color: '#fefefe' }
+console.log(other);   // { height: 30, color: '#fefefe', title: 'Name' }
+```
+
+Удобно использовать подобный функционал, оформляя его в виде [стрелочных функций](https://pro-edu.tensor.ru/tensor/lesson/page.php?id=3166&sectionid=4&pageid=13).
+
+Например, мы можем сделать стрелочную функцию, с помощью которой переименуем свойство объекта title:
+
+```javascript
+const rename = ({ title, ...object }) => ({ TITLE: title, ...object });
+const obj = { width: 100, height: 30, color: '#fefefe', title: 'Name' };
+rename(obj);
+console.log(obj);   // { TITLE: 'Name', width: 100, height: 30, color: '#fefefe' };
 ```
 
 ### Статьи по теме
