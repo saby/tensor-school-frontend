@@ -23,34 +23,77 @@
 Разработчик может вмешаться в эту схему, сначала изменив свойство, а потом прочитав его. В этом случае браузер будет вынужден рассчитать новую информацию об элементе прямо во время выполнения JavaScript-кода. Такое вмешательство называется _принудительный синхронный перерасчёт макета_ (_forced reflow_ или _forced synchronous layout_).
 
 ```js
-element.style('height', 500);
+element.classList.toggle('big');
 console.log(element.style('height'));
 ```
 
-Особенно сильно эта проблема проявляется, когда мы выполняем какие-то действия в цикле:
+Особенно сильно эта проблема проявляется, когда мы выполняем какие-то действия в цикле. В качестве примера возьмём [небольшую страницу](./resources/index.html):
+
+![](<./images/forced reflow/whole page.png>)
+
+На ней есть 3 кнопки, каждая из которых переключает размер шрифта у всех элементов в списке и печатает высоту для каждого элемента.
+
+Код для первой кнопки выглядит так:
+
 
 ```js
-const elements = document.querySelectorAll('.list-item');
-for (let i = 0; i < elements.length; i++) {
-    elements[i].style('height', 300);
-    console.log(elements[i].clientHeight);
-}
+const items = document.getElementsByClassName('listItem');
+
+Array.from(items).forEach((item, index) => {
+    item.classList.toggle('big');
+    item.classList.toggle('small');
+    console.log(`Высота элемента ${index}: ${item.clientHeight}`);
+});
 ```
 
-Здесь браузер вынужден пересчитывать информацию на каждом шаге цикла. Значительно дешевле сделать два цикла: первый будет менять высоту, а второй будет выводить её:
+Здесь браузер вынужден пересчитывать информацию на каждом шаге цикла и это занимает целых 5 секунд:
+
+![](<./images/forced reflow/slow.png>)
+
+Если увеличить масштаб, то становится понятно, что всё время уходит на пересчёт макета:
+
+![](<./images/forced reflow/slow-zoomed.png>)
+
+Значительно дешевле сделать два цикла: первый будет менять высоту, а второй будет выводить её:
 
 ```js
-const elements = document.querySelectorAll('.list-item');
-for (let i = 0; i < elements.length; i++) {
-    elements[i].style('height', 300);
-}
+const items = document.getElementsByClassName('listItem');
 
-for (let i = 0; i < elements.length; i++) {
-    console.log(elements[i].clientHeight);
-}
+Array.from(items).forEach((item, index) => {
+    item.classList.toggle('big');
+});
+
+Array.from(items).forEach((item, index) => {
+    console.log(`Высота элемента ${index}: ${item.clientHeight}`);
+});
 ```
 
-В данном случае браузер будет пересчитывать размеры элементов только один раз.
+В данном случае браузер будет пересчитывать размеры элементов только один раз и все действия займут всего 178мс:
+
+![](<./images/forced reflow/fast.png>)
+
+В некоторых случаях, можно пойти ещё дальше: переключить размер шрифта, дать браузеру отрисовать кадр, а уже потом выводить размер каждого элемента:
+
+```js
+const items = document.getElementsByClassName('listItem');
+
+Array.from(items).forEach((item, index) => {
+    item.classList.toggle('big');
+    item.classList.toggle('small');
+});
+
+setTimeout(() => {
+    Array.from(items).forEach((item, index) => {
+        console.log(`Высота элемента ${index}: ${item.clientHeight}`);
+    });
+});
+```
+
+При таком подходе, пользователь видит результат своего действия уже через 32мс:
+
+![](<./images/forced reflow/superFast.png>)
+
+
 
 ## Снижайте сложность отрисовки
 Т.к. браузер перерисовывает слой только если на нём что-то изменилось, то можно ускорить страницу с помощью выноса элемента на отдельный слой. Так можно значительно уменьшить количество элементов, обрабатываемых браузером.
