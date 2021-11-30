@@ -178,6 +178,18 @@ h1 ~ p {
 
 ![./src/Untitled%202.png](./src/Untitled%202.png)
 
+### Основные правила CSS
+
+1. Отображение (свойство display)
+1. Позиционирование (свойства position, right, left, top, bottom)
+1. Размеры (width и heigth)
+1. Внешние (margin) и внутренние (padding) отступы
+1. Стилизация текста (font-size, font-weight, color, font-size, letter-spacing, line-height, text-align)
+1. Стилизация границ (свойства семейства border)
+1. Стилизация фона (свойства семейства background)
+
+Со значениями свойств вы можете ознакомиться в любом справочнике, например [MDN](https://developer.mozilla.org/ru/)
+
 ### Псевдоклассы и псевдоэлементы
 
 **Псевдоклассы** — это классы, фактически не прикрепленные к HTML-тегам. Они позволяют применить CSS-правила к элементам при совершении события или подчиняющимся определенному правилу.
@@ -354,3 +366,5 @@ main > * {
 - [Псевдоклассы](https://developer.mozilla.org/ru/docs/Web/CSS/Pseudo-classes)
 - [http://htmlbook.ru/samcss/nasledovanie](http://htmlbook.ru/samcss/nasledovanie)
 - [http://htmlbook.ru/samcss/kaskadirovanie](http://htmlbook.ru/samcss/kaskadirovanie)
+- [Свойство position](https://learn.javascript.ru/position)
+- [Свойство display](https://learn.javascript.ru/display)
