@@ -1,5 +1,10 @@
 # Flex. Grid. Сетка.
+
+
 По [макету](https://www.figma.com/file/pWtalJmD6aLSLa437yTVA9/%D0%9C%D0%B0%D0%BA%D0%B5%D1%82-%D0%B4%D0%BB%D1%8F-TENSOR-SCHOOL?node-id=0%3A1) сверстайте карточку студента.
+
+
+Шрифты уже подключены. Все необходимые картинки находятся в папке img.
 
 
 Требования:
