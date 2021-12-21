@@ -28,12 +28,6 @@ describe('Сетка', () => {
         await page.goto(`file:${path.join(__dirname, 'index.html')}`);
     });
 
-    it('Верстка не тронута', async () => {
-        const container = await page.evaluate(() => document.body.innerHTML);
-
-        expect(container).toMatchSnapshot();
-    });
-
     it('renders correctly', async () => {
         const image = await page.screenshot();
 

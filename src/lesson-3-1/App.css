@@ -1,28 +1,56 @@
-html, body, #root {
-   height: 100%;
-   margin: 0;
-}
+@import url('normalize.css');
+@import url('fonts/fonts.css');
 
-.flex-container {
+body {
+   font-family: 'SF UI Display', Courier, monospace;
+   width: 375px;
    display: flex;
-   justify-content: space-between;
    align-items: center;
-   width: 700px;
-   height: 300px;
+   justify-content: center;
+   margin: 0;
+   height: 100vh;
+   width: 100vw;
 }
 
-.flex-container > div {
-   width: 100px;
-   height: 100px;
-   background-color: #DAA520;
-   border-radius: 50%;
+.container {
+   width: 375px;
 }
 
-.flex-container :first-child,
-.flex-container :last-child {
-   align-self: flex-start;
+/* ---- Ваши стили тут  ---- */
+.header {
+   text-align: center;
 }
 
-.flex-container :nth-child(3) {
-   align-self: flex-end;
+.header__image {
+   width: 42px;
+   height: 42px;
+   margin-bottom: 16px;
+}
+
+.header__title {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 31px;
+   margin: 0 0 64px 0;
+}
+
+.school-logo {
+   margin: 0;
+   text-align: center;
+   padding: 0 40px;
+}
+
+.school-logo__image {
+   width: 209px;
+   height: 178px;
+   margin-bottom: 48px;
+}
+
+.school-logo__caption {
+   font-size: 14px;
+}
+
+.school-logo__paragraph {
+   margin: 0;
 }
