@@ -1,0 +1,28 @@
+.App {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.App__buttons {
+    width: 127px;
+    display: flex;
+    flex-direction: column;
+}
+.App__image {
+    background-image: url(./want.jpg);
+    width: 320px;
+    height: 180px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.App__list {
+    flex-basis: 400px;
+}
+.App__list-big {
+    font-size: 2rem;
+}
+.App__list-small {
+    font-size: 1rem;
+}

@@ -1,0 +1,31 @@
+th {
+    text-decoration: underline;
+    cursor: pointer;
+    height: 23px;
+    vertical-align: bottom;
+}
+th:hover {
+    text-shadow: #05ffff 0 0 4px;
+}
+th:active {
+    text-shadow: #1F63FF 0 0 4px;
+}
+td:not(:first-child), th:not(:first-child) {
+    padding-left: 8px;
+}
+.Table__container {
+    position: relative;
+    text-align: left;
+    min-height: 312px;
+}
+.Table__container::before {
+    content: '';
+    position: absolute;
+    width: 312px;
+    height: 248px;
+    background-image: url("./stonks.jpg");
+    background-size: cover;
+    left: -322px;
+    top: 0;
+    z-index: -1;
+}
