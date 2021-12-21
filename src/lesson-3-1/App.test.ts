@@ -33,4 +33,10 @@ describe('Сетка', () => {
 
         expect(image).toMatchImageSnapshot();
     });
+
+    it('Верстка соответствует эталону', async () => {
+        const container = await page.evaluate(() => document.body.innerHTML);
+
+        expect(container).toMatchSnapshot();
+    });
 });
