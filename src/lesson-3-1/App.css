@@ -1,0 +1,56 @@
+@import url('normalize.css');
+@import url('fonts/fonts.css');
+
+body {
+   font-family: 'SF UI Display', Courier, monospace;
+   width: 375px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 0;
+   height: 100vh;
+   width: 100vw;
+}
+
+.container {
+   width: 375px;
+}
+
+/* ---- Ваши стили тут  ---- */
+.header {
+   text-align: center;
+}
+
+.header__image {
+   width: 42px;
+   height: 42px;
+   margin-bottom: 16px;
+}
+
+.header__title {
+   text-transform: uppercase;
+   font-weight: bold;
+   font-size: 24px;
+   line-height: 31px;
+   margin: 0 0 64px 0;
+}
+
+.school-logo {
+   margin: 0;
+   text-align: center;
+   padding: 0 40px;
+}
+
+.school-logo__image {
+   width: 209px;
+   height: 178px;
+   margin-bottom: 48px;
+}
+
+.school-logo__caption {
+   font-size: 14px;
+}
+
+.school-logo__paragraph {
+   margin: 0;
+}
