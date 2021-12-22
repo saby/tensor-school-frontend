@@ -7,30 +7,25 @@ const toMatchImageSnapshot = configureToMatchImageSnapshot({
     customDiffConfig: customConfig,
     noColors: true
 });
+expect.extend({ toMatchImageSnapshot });
 
 let browser: Browser;
 
 beforeAll(async () => {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+        headless: true
+    });
 });
 
 afterAll(async () => {
     await browser.close();
 });
 
-expect.extend({ toMatchImageSnapshot });
-
 describe('Сетка', () => {
     let page: Page;
     beforeEach(async () => {
         page = await browser.newPage();
         await page.goto(`file:${path.join(__dirname, 'index.html')}`);
-    });
-
-    it('Верстка не тронута', async () => {
-        const container = await page.evaluate(() => document.body.innerHTML);
-
-        expect(container).toMatchSnapshot();
     });
 
     it('renders correctly', async () => {
