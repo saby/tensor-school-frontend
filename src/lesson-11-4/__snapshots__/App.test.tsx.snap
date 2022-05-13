@@ -1,0 +1,2603 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VDOM Верстка по умолчанию 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="х"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="п"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска 3`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="a"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска 4`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+               🠕
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+               🠗
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 3`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 4`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+               🠕
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 5`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+               🠗
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 6`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 7`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+               🠕
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 8`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+               🠗
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 9`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value="хо"
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка поиска с сортировкой 10`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по дате 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+               🠕
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по дате 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+               🠗
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по дате 3`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по названию 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+               🠕
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по названию 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+               🠗
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по названию 3`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по цене 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+               🠕
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по цене 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+               🠗
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`VDOM Проверка сортировки по цене 3`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="Table__container"
+    >
+      <input
+        data-testid="search"
+        placeholder="Найти..."
+        value=""
+      />
+      <table>
+        <thead>
+          <tr>
+            <th
+              data-id="name"
+              data-testid="name"
+            >
+              Название
+              
+            </th>
+            <th
+              data-id="cost"
+              data-testid="cost"
+            >
+              Цена
+              
+            </th>
+            <th
+              data-id="date"
+              data-testid="date"
+            >
+              Дата
+              
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              Пылесос Karcher
+            </td>
+            <td>
+              15000
+            </td>
+            <td>
+              21.09.2021, 14:11:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Планшет запчасти
+            </td>
+            <td>
+              250
+            </td>
+            <td>
+              23.09.2021, 13:53:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Хозблок
+            </td>
+            <td>
+              76000
+            </td>
+            <td>
+              23.09.2021, 17:08:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Холодильник
+            </td>
+            <td>
+              7500
+            </td>
+            <td>
+              23.09.2021, 15:23:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Airpods
+            </td>
+            <td>
+              16000
+            </td>
+            <td>
+              23.09.2021, 16:28:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              1-к квартира
+            </td>
+            <td>
+              10000
+            </td>
+            <td>
+              22.09.2021, 16:22:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Электроплитка
+            </td>
+            <td>
+              600
+            </td>
+            <td>
+              22.09.2021, 13:41:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Автолюлька
+            </td>
+            <td>
+              2000
+            </td>
+            <td>
+              22.09.2021, 16:40:00
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Кирпич
+            </td>
+            <td>
+              9000
+            </td>
+            <td>
+              22.09.2021, 13:47:00
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+`;

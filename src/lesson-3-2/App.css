@@ -1,0 +1,107 @@
+@import url('normalize.css');
+@import url('fonts/fonts.css');
+
+html, body, #root {
+   height: 100%;
+   margin: 0;
+   font-family: 'SF UI Display', Courier, monospace;
+}
+
+.container {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100%;
+}
+
+/* ---- Ваши стили тут  ---- */
+.student-card {
+   display: flex;
+   justify-content: space-between;
+   padding: 16px;
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+   border-radius: 8px;
+   width: 350px;
+}
+
+.student-card__left {
+   flex-grow: 1;
+   flex-shrink: 1;
+}
+
+.student-card__right {
+   flex-grow: 0;
+   flex-shrink: 0;
+   width: 104px;
+}
+
+.student-card__surname {
+   margin: 0 0 0 0;
+   font-weight: bold;
+   font-size: 18px;
+   line-height: 21px;
+   text-transform: uppercase;
+}
+
+.student-card__name {
+   margin: 0 0 12px 0;
+   font-weight: bold;
+   font-size: 18px;
+}
+
+.student-info {
+   display: flex;
+   flex-direction: column;
+   margin: 0;
+   list-style-type: none;
+   padding: 0;
+}
+
+.student-info__item {
+   display: block;
+   position: relative;
+   color: #7A91B5;
+   text-decoration: none;
+   font-size: 12px;
+   padding-left: 22px;
+   margin-bottom: 6px;
+}
+
+.student-info__item:before {
+   content: '';
+   position: absolute;
+   top: -2px;
+   left: 0;
+   height: 16px;
+   width: 16px;
+}
+
+.student-info__item_type_phone:before {
+   background: url('img/Phone.svg') no-repeat center center;
+}
+
+.student-info__item_type_city:before {
+   background: url('img/point.svg') no-repeat center center;
+}
+
+.student-info__item_type_university:before {
+   background: url('img/University.svg') no-repeat center center;
+}
+
+.student-info__item_type_email:before {
+   background: url('img/Mail.svg') no-repeat center center;
+}
+
+.student-card__image {
+   width: 104px;
+   margin-bottom: 6px;
+}
+
+.student-contacts {
+   display: flex;
+   padding: 0 4px;
+   margin: 0;
+   list-style-type: none;
+   padding: 0;
+   justify-content: space-between;
+}

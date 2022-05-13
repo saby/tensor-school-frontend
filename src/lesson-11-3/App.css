@@ -1,0 +1,41 @@
+.App {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.App__counter {
+    position: relative;
+    margin-top: 400px;
+}
+
+.App__counter::before {
+    background-image: url("./count.jpg");
+    background-repeat: no-repeat;
+    content: '';
+    width: 509px;
+    height: 457px;
+    position: absolute;
+    z-index: -1;
+    left: -176px;
+    bottom: 15px;
+}
+
+.App__reset {
+    margin-left: 16px;
+    margin-bottom: 8px;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}

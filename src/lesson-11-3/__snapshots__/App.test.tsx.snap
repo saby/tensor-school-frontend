@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Render Проверка верстки по умолчанию 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__counter"
+    >
+      Counter: 
+      0
+      <button
+        class="App__reset"
+        data-testid="reset"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="App__input"
+    >
+      <input
+        data-testid="input"
+        pattern="\\\\d"
+        type="number"
+        value="1000"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Проверка изменения задержки 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__counter"
+    >
+      Counter: 
+      1
+      <button
+        class="App__reset"
+        data-testid="reset"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="App__input"
+    >
+      <input
+        data-testid="input"
+        pattern="\\\\d"
+        type="number"
+        value="500"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Проверка сброса счетчика 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__counter"
+    >
+      Counter: 
+      1
+      <button
+        class="App__reset"
+        data-testid="reset"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="App__input"
+    >
+      <input
+        data-testid="input"
+        pattern="\\\\d"
+        type="number"
+        value="1000"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Проверка сброса счетчика 2`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__counter"
+    >
+      Counter: 
+      0
+      <button
+        class="App__reset"
+        data-testid="reset"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="App__input"
+    >
+      <input
+        data-testid="input"
+        pattern="\\\\d"
+        type="number"
+        value="1000"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Render Проверка стандартной задержки в 1 сек 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="App__counter"
+    >
+      Counter: 
+      1
+      <button
+        class="App__reset"
+        data-testid="reset"
+      >
+        Reset
+      </button>
+    </div>
+    <div
+      class="App__input"
+    >
+      <input
+        data-testid="input"
+        pattern="\\\\d"
+        type="number"
+        value="1000"
+      />
+    </div>
+  </div>
+</div>
+`;
